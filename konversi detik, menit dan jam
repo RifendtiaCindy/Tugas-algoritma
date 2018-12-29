@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <conio.h>
+#include <iostream>
+
+main()
+{
+    int detik,menit,jam,hari,sisa1,sisa2,sisa3;
+    char lagi;
+    puts( "---------------------------------");
+    puts( " Konversi waktu");
+    puts("----------------------------------");
+    atas:
+        cout<< "\n\n Masukkan jumlah detik :";cin>>detik;
+        hari = detik/84600;
+        sisa1= detik-(hari*84600);
+        jam= sisa1/3600;
+        sisa2= sisa1- (jam*3600);
+        menit= sisa2/60;
+        sisa3=sisa2-(menit*60);
+    puts( "\n\n-----------------------------\n");
+    printf( " --> %d hari, %d jam, %d menit, %d detik\n",hari,jam,menit,sisa3);
+    puts( "\n-------------------------------\n");
+    getch();
+
+
+}
